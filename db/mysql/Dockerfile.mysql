@@ -1,0 +1,14 @@
+FROM mariadb:10.5.15
+
+# Establecer las variables de entorno para MariaDB
+ENV MARIADB_ROOT_PASSWORD=greenplatform2024++
+ENV MARIADB_DATABASE=greenplatform
+ENV MARIADB_USER=sysadmin
+ENV MARIADB_PASSWORD=greenplatform2024++
+
+# Exponer el puerto de MariaDB
+EXPOSE 3306
+
+# Comando para iniciar MariaDB
+CMD ["mysqld"]
+

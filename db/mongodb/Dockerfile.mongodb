@@ -1,0 +1,11 @@
+FROM mongo:5.0.14-focal
+
+# Establecer las variables de entorno para MongoDB
+ENV MONGO_INITDB_ROOT_USERNAME=root
+ENV MONGO_INITDB_ROOT_PASSWORD=greenplatform2024
+
+# Exponer el puerto de MongoDB
+EXPOSE 27017
+
+# Comando para iniciar MongoDB
+CMD ["mongod"]
